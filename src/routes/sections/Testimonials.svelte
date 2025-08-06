@@ -1,31 +1,25 @@
 <script lang='ts'>
-  import bg from '../../assets/bg.png'
-    import TestimonialCard from '../comp/TestimonialCard.svelte';
+  import bg from '../../assets/bg.png';
+  import TestimonialCard from '../comp/TestimonialCard.svelte';
 </script>
 
-<div class="bg-black min-h-screen">
-  <img src={bg} alt="" class="w-full h-full object-cover absolute -z10">
+<div class="relative bg-black min-h-screen pt-20">
 
-  <div class="max-w-7xl mx-auto px-6 relative z-10">
-    <div class="flex flex-col md:flex-row items-center justify-between mb-16">
-      <h1 class="text-white text-4xl md:text-5xl font-bold tracking-tight">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+    <div class="flex flex-col md:flex-row items-center justify-between mb-10 md:mb-16">
+      <h1 class="text-white text-4xl md:text-5xl font-bold tracking-tight mt-6 md:mt-10">
         What others have to say
       </h1>
-      <button class="mt-4 md:mt-0 px-6 py-2 rounded-full bg-white text-black font-semibold shadow hover:bg-gray-100 transition">
-        Contact
-      </button>
     </div>
 
-    <div class="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6"> 
-      <div class="break-inside-avoid">
-        <TestimonialCard/>
-        <TestimonialCard/>
-        <TestimonialCard/>
-        <TestimonialCard/>
-        <TestimonialCard/>
-        <TestimonialCard/>
-        <TestimonialCard/>
-        <TestimonialCard/>
+    <div class="w-full">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <!-- First card: big on desktop, regular on mobile -->
+        <TestimonialCard grid="lg:col-span-2 lg:row-span-2" />
+        <TestimonialCard grid="" />
+        <TestimonialCard grid="lg:col-span-2" />
+        <TestimonialCard grid="" />
+        <!-- Add more as needed -->
       </div>
     </div>
   </div>

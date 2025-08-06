@@ -27,12 +27,12 @@
           <p
             class="text-white text-base sm:text-lg text-center max-w-full md:max-w-[35%]"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur reiciendis eligendi nihil deleniti nemo! Magni vel voluptates expedita et quisquam enim amet tempora! Fugit ipsa enim, laudantium modi itaque minus!
+            UpContent is Hungary’s leading content agency, trusted by top brands for our hands-off, done-for-you approach. No micro-managing, no endless revisions—just proven, high-performing content delivered exactly when you need it.
           </p>
           <button
             class="bg-white text-black px-8 py-3 rounded-full font-semibold text-base sm:text-lg"
           >
-            Get Started
+            Get My Free Preview
           </button>
         </div>
         <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white text-sm font-semibold animate-pulse select-none cursor-default z-20">

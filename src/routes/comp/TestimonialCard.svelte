@@ -1,4 +1,8 @@
-<div class="relative bg-gradient-to-br from-gray-900/80 to-gray-800/70 backdrop-blur-lg rounded-2xl shadow-2xl border border-white/10 p-8 flex flex-col justify-between overflow-hidden">
+<script lang='ts'>
+  export let grid: string;
+</script>
+
+<div class={`${grid} relative bg-gradient-to-br from-gray-900/80 to-gray-800/70 backdrop-blur-lg rounded-2xl shadow-2xl border border-white/10 p-8 flex flex-col justify-between overflow-hidden w-full`}>
   <!-- Decorative quote mark -->
   <svg class="absolute -top-2 -left-2 w-14 h-14 text-white/10 pointer-events-none" fill="none" viewBox="0 0 48 48">
     <text x="0" y="38" font-size="48" font-family="serif" font-weight="bold">“</text>

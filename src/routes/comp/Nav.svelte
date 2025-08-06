@@ -25,7 +25,7 @@
     <!-- CTA Button -->
     <div class="hidden md:block">
       <button class="bg-white text-black px-8 py-2 rounded-full font-semibold hover:bg-gray-200 transition">
-        Learn More
+        Get A Free Preview
       </button>
     </div>
 

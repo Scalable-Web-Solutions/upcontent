@@ -11,8 +11,8 @@
           About UpContent
         </div>
         <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-          Transforming content strategy with
-          <span class="text-blue-400"> innovation</span>
+          Crafting content with
+          <span class="text-blue-400"> Quality</span>
         </h2>
         <p class="text-lg text-gray-300 mb-8 leading-relaxed">
           We believe that exceptional content drives exceptional results. Our team of strategists,
@@ -53,7 +53,7 @@
         </div>
 
         <button class="group inline-flex items-center bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition-all duration-300">
-          Learn About Our Process
+          Get A Free Preview
         </button>
       </div>
 
