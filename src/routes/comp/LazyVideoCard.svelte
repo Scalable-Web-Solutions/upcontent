@@ -5,7 +5,6 @@
   let observer: IntersectionObserver;
   let scrollContainer: any;
 
-  // Sample videos object for demonstration
   let videos = {
     afv: '7532162984584498445',
     e: '7532162984584498445',
@@ -19,7 +18,6 @@
   let isDown = false;
   let startX = 0;
   let scrollLeft = 0;
-  
 
   function handleMouseDown(e: MouseEvent) {
     isDown = true;
@@ -39,7 +37,7 @@
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - scrollContainer.offsetLeft;
-    const walk = (x - startX) * 1.3; // multiplier = drag speed
+    const walk = (x - startX) * 1.3;
     scrollContainer.scrollLeft = scrollLeft - walk;
   }
 
@@ -62,35 +60,45 @@
   });
 </script>
 
-<div bind:this={root} class="bg-black min-h-screen w-full overflow-y-hidden">
+<div bind:this={root} class="bg-black min-h-screen w-full">
   {#if loaded}
-    <!-- svelte-ignore a11y_no_static_element_interactions -->
-    <div class="w-full overflow-x-auto overflow-y-hidden hide-sb cursor-grab" bind:this={scrollContainer} on:mousedown={handleMouseDown} on:mouseleave={handleMouseLeave} on:mouseup={handleMouseUp} on:mousemove={handleMouseMove}>
-    <h1 class="text-white text-4xl font-bold ml-10 mt-10 absolute">What we offer</h1>
-      <div class="flex flex-nowrap space-x-8 px-8 py-5 mt-20">
-        {#each Object.entries(videos) as [key, value]}
-          <div class="relative flex-shrink-0 rounded-[2.3rem] bg-black shadow-2xl overflow-hidden border border-gray-800"
-            style="width: 300px; height: 600px;">
-            <blockquote
-              class="tiktok-embed w-full h-full"
-              cite={`https://www.tiktok.com/@${key}/video/${value}`}
-              data-video-id={value}
-              style="width: 100%; height: 100%;"
+    <section class="max-w-7xl mx-auto px-6 py-16">
+      <!-- Heading -->
+      <h1 class="text-white text-4xl font-bold mb-8">What we offer</h1>
+      <!-- Scroller -->
+      <div
+        class="overflow-x-auto hide-sb cursor-grab"
+        bind:this={scrollContainer}
+        on:mousedown={handleMouseDown}
+        on:mouseleave={handleMouseLeave}
+        on:mouseup={handleMouseUp}
+        on:mousemove={handleMouseMove}
+      >
+        <div class="flex flex-nowrap space-x-8">
+          {#each Object.entries(videos) as [key, value]}
+            <div
+              class="relative flex-shrink-0 rounded-[2.3rem] bg-black shadow-2xl overflow-hidden border border-gray-800"
+              style="width: 300px; height: 600px;"
             >
-              <section class="flex flex-col justify-end h-full w-full">
-                <!-- This section gets replaced by the TikTok embed -->
-                <!-- svelte-ignore a11y_consider_explicit_label -->
-                <a target="_blank" title={`@${key}`} href={`https://www.tiktok.com/@${key}?refer=embed`} class="text-white"></a>
-                <span class="p-4 text-white text-2xl font-bold bg-gradient-to-t from-black/70 to-transparent rounded-b-[2.3rem]">
-                  TikTok Placeholder<br />{key}
-                </span>
-              </section>
-            </blockquote>
-            <script async src="https://www.tiktok.com/embed.js"></script>
-          </div>
-        {/each}
+              <blockquote
+                class="tiktok-embed w-full h-full"
+                cite={`https://www.tiktok.com/@${key}/video/${value}`}
+                data-video-id={value}
+                style="width: 100%; height: 100%;"
+              >
+                <section class="flex flex-col justify-end h-full w-full">
+                  <a target="_blank" title={`@${key}`} href={`https://www.tiktok.com/@${key}?refer=embed`} class="text-white"></a>
+                  <span class="p-4 text-white text-2xl font-bold bg-gradient-to-t from-black/70 to-transparent rounded-b-[2.3rem]">
+                    TikTok Placeholder<br />{key}
+                  </span>
+                </section>
+              </blockquote>
+              <script async src="https://www.tiktok.com/embed.js"></script>
+            </div>
+          {/each}
+        </div>
       </div>
-    </div>
+    </section>
   {/if}
 </div>
 
@@ -107,4 +115,3 @@
     user-select: none;
   }
 </style>
-
