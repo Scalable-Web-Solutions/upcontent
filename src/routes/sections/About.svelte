@@ -1,5 +1,13 @@
 <script lang="ts">
   import kane from '../../assets/kane.png'
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
 </script>
 
 <section class="py-20 bg-black">
@@ -52,7 +60,8 @@
           </div>
         </div>
 
-        <button class="group inline-flex items-center bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition-all duration-300">
+        <button on:click={() => scrollToContact()} data-cta="about-free-preview" class="group inline-flex items-center bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition-all duration-300">
+
           Get A Free Preview
         </button>
       </div>

@@ -66,6 +66,7 @@
       <!-- Heading -->
       <h1 class="text-white text-4xl font-bold mb-8">What we offer</h1>
       <!-- Scroller -->
+      <!-- svelte-ignore a11y_no_static_element_interactions -->
       <div
         class="overflow-x-auto hide-sb cursor-grab"
         bind:this={scrollContainer}

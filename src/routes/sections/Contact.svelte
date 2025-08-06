@@ -1,5 +1,5 @@
-<section class="bg-black py-32 px-6">
-  <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<section id="contact" class="bg-black py-32 px-6">
+  <div id="contact" class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
     
     <!-- Left: Contact Text & Details -->
     <div>
@@ -53,7 +53,7 @@
         <label class="block text-gray-300 text-sm font-semibold mb-2">Message</label>
         <textarea required placeholder="How can we help you?" class="w-full bg-black/50 border border-gray-700 rounded-lg p-3 text-gray-100 min-h-[120px] focus:ring-2 focus:ring-blue-500"></textarea>
       </div>
-      <button type="submit" class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg shadow transition text-lg">
+      <button data-cta="contact-form" type="submit" class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg shadow transition text-lg">
         Send Message
       </button>
     </form>

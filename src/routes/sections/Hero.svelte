@@ -1,10 +1,12 @@
 <script lang="ts">
     import cc from '../../assets/cc.mp4'
     
-    const scrollToSection = () => 
-    {
-      
+    const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
     }
+  }
 </script>
 
 <div class="main h-screen w-screen overflow-hidden">
@@ -30,7 +32,10 @@
             UpContent is Hungary’s leading content agency, trusted by top brands for our hands-off, done-for-you approach. No micro-managing, no endless revisions—just proven, high-performing content delivered exactly when you need it.
           </p>
           <button
+            data-cta="hero-free-preview"
             class="bg-white text-black px-8 py-3 rounded-full font-semibold text-base sm:text-lg"
+            on:click={() => scrollToContact()}
+
           >
             Get My Free Preview
           </button>

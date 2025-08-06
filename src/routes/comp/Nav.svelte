@@ -4,6 +4,13 @@
   function toggleMenu() {
     isOpen = !isOpen;
   }
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 </script>
 
 <nav class="w-full h-[120px] fixed top-0 left-0 right-0 text-white z-50">
@@ -24,7 +31,8 @@
 
     <!-- CTA Button -->
     <div class="hidden md:block">
-      <button class="bg-white text-black px-8 py-2 rounded-full font-semibold hover:bg-gray-200 transition">
+      <button on:click={() => scrollToContact()} data-cta="nav-free-preview" class="bg-white text-black px-8 py-2 rounded-full font-semibold hover:bg-gray-200 transition">
+
         Get A Free Preview
       </button>
     </div>
@@ -59,8 +67,8 @@
       <a href="#" class="block hover:text-purple-400 transition">What we offer</a>
       <a href="#" class="block hover:text-purple-400 transition">Testimonials</a>
       <a href="#" class="block hover:text-purple-400 transition">Contact</a>
-      <button class="w-full bg-white text-black py-2 rounded-full font-semibold hover:bg-gray-200 transition">
-        Learn More
+      <button on:click={() => scrollToContact()} class="w-full bg-white text-black py-2 rounded-full font-semibold hover:bg-gray-200 transition">
+        Get A Free Preview
       </button>
     </div>
   {/if}

@@ -93,7 +93,7 @@
   }
 </script>
 
-<section class="relative min-h-[70vh] flex flex-col items-center justify-center w-full bg-black py-20 overflow-hidden">
+<section class="relative min-h-[70vh] flex flex-col items-center justify-center w-full bg-black py-20 overflow-hidden -mt-24">
   <div class="absolute inset-0 flex justify-center items-center pointer-events-none -z-10">
     <div class="w-[650px] h-[320px] rounded-full bg-gradient-to-tr from-blue-700/40 via-purple-600/20 to-blue-900/30 blur-3xl opacity-70"></div>
   </div>
