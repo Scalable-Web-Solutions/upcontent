@@ -102,14 +102,6 @@
     What others have to say
   </h1>
   <div class="relative w-full flex justify-center items-center px-2 select-none">
-    <!-- Left Arrow -->
-    <button
-      class="absolute -left-10 top-1/2 -translate-y-1/2 z-10 bg-[#181D28]/80 hover:bg-[#181D28] rounded-full p-2 shadow-lg transition border border-white/10"
-      on:click={prev}
-      aria-label="Previous"
-    >
-      <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
-    </button>
     <!-- Testimonial Card (with swipe/drag) -->
     <div
       class="mx-auto w-full max-w-2xl transition duration-500"
@@ -128,13 +120,6 @@
       />
     </div>
     <!-- Right Arrow -->
-    <button
-      class="absolute -right-10 top-1/2 -translate-y-1/2 z-10 bg-[#181D28]/80 hover:bg-[#181D28] rounded-full p-2 shadow-lg transition border border-white/10"
-      on:click={next}
-      aria-label="Next"
-    >
-      <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-    </button>
   </div>
   <!-- Dots / Indicators -->
   <div class="flex justify-center mt-8 gap-3">

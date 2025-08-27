@@ -10,13 +10,13 @@
 
 </script>
 
-<section class="py-20 bg-black">
+<section id="about" class="py-20 bg-black">
   <div class="max-w-7xl mx-auto px-6">
     <div class="grid lg:grid-cols-2 gap-16 items-center">
       <!-- Left Column - Text -->
       <div>
-        <div class="inline-block bg-blue-900/30 text-blue-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
-          About UpContent
+        <div class="inline-block bg-blue-900/30 text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
+          About 
         </div>
         <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
           Crafting content with
@@ -78,12 +78,12 @@
         </div>
 
         <!-- Floating Stats Cards (Dark) -->
-        <div class="absolute -left-6 top-20 bg-gray-900/90 p-6 rounded-xl shadow-lg border border-gray-800">
+        <div class="absolute -left-6 top-20 bg-gray-900/90 p-6 rounded-xl shadow-lg">
           <div class="text-3xl font-bold text-white mb-1">25+</div>
           <div class="text-sm text-gray-400">Projects Completed</div>
         </div>
 
-        <div class="absolute -right-6 bottom-20 bg-gray-900/90 p-6 rounded-xl shadow-lg border border-gray-800">
+        <div class="absolute -right-6 bottom-20 bg-gray-900/90 p-6 rounded-xl shadow-lg">
           <div class="text-3xl font-bold text-blue-400 mb-1">98%</div>
           <div class="text-sm text-gray-400">Client Satisfaction</div>
         </div>

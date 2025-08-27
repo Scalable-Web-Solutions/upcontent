@@ -1,5 +1,6 @@
 <script lang="ts">
     import cc from '../../assets/cc.mp4'
+    import { name } from '$lib/util';
     
     const scrollToContact = () => {
     const contactSection = document.getElementById('contact');
@@ -24,12 +25,12 @@
           <h1
             class="text-white font-semibold leading-[1.1] text-center text-4xl sm:text-5xl md:text-[75px]"
           >
-            Redesign your <br /> content with UpContent
+            Redesign your <br /> content with {name}
           </h1>
           <p
             class="text-white text-base sm:text-lg text-center max-w-full md:max-w-[35%]"
           >
-            UpContent is Hungary’s leading content agency, trusted by top brands for our hands-off, done-for-you approach. No micro-managing, no endless revisions—just proven, high-performing content delivered exactly when you need it.
+            {name} is Hungary’s leading content agency, trusted by top brands for our hands-on, done-for-you approach. No extra steps, no hidden costs, just proven, high-performing content delivered exactly when you need it.
           </p>
           <button
             data-cta="hero-free-preview"

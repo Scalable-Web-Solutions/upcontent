@@ -15,7 +15,7 @@
 	import { onMount } from 'svelte';
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
-    import Nav from './comp/Nav.svelte';
+    import Nav from './sections/Nav.svelte';
 	
 	let { children } = $props();
 
@@ -24,7 +24,7 @@
 		{
 			if(window.analytics){
 				window.analytics.init({project: 'upcontent-hu'});
-				window.analytics.trackPageview();
+				window.analytics.trackPageview?.();
 			}
 			else{
 				console.log('Analytics not initialized');

@@ -1,6 +1,6 @@
 <script>
   let isOpen = false;
-
+  import { name } from "$lib/util";
   function toggleMenu() {
     isOpen = !isOpen;
   }
@@ -17,7 +17,7 @@
   <div class="max-w-7xl mx-auto h-16 flex items-center justify-between px-6 md:px-10">
     <!-- Logo -->
     <div class="flex items-center gap-5">
-      <h1 class="text-2xl font-bold cursor-pointer">UpContent</h1>
+      <h1 class="text-2xl font-bold cursor-pointer">{name}</h1>
     </div>
 
     <!-- Desktop Links -->

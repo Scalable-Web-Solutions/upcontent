@@ -5,6 +5,10 @@
   let observer: IntersectionObserver;
   let scrollContainer: any;
 
+  import k from '$lib/assets/k.jpg'
+  import ssone from '$lib/assets/Screenshot_21.png'
+  import sstwo from '$lib/assets/Screenshot_22.png'
+
   let videos = {
     afv: '7532162984584498445',
     e: '7532162984584498445',
@@ -64,7 +68,7 @@
   {#if loaded}
     <section class="max-w-7xl mx-auto px-6 py-16">
       <!-- Heading -->
-      <h1 class="text-white text-4xl font-bold mb-8">What we offer</h1>
+      <h1 class="text-white text-4xl font-bold mb-8">Behind the Scenes</h1>
       <!-- Scroller -->
       <!-- svelte-ignore a11y_no_static_element_interactions -->
       <div
@@ -75,28 +79,10 @@
         on:mouseup={handleMouseUp}
         on:mousemove={handleMouseMove}
       >
-        <div class="flex flex-nowrap space-x-8">
-          {#each Object.entries(videos) as [key, value]}
-            <div
-              class="relative flex-shrink-0 rounded-[2.3rem] bg-black shadow-2xl overflow-hidden border border-gray-800"
-              style="width: 300px; height: 600px;"
-            >
-              <blockquote
-                class="tiktok-embed w-full h-full"
-                cite={`https://www.tiktok.com/@${key}/video/${value}`}
-                data-video-id={value}
-                style="width: 100%; height: 100%;"
-              >
-                <section class="flex flex-col justify-end h-full w-full">
-                  <a target="_blank" title={`@${key}`} href={`https://www.tiktok.com/@${key}?refer=embed`} class="text-white"></a>
-                  <span class="p-4 text-white text-2xl font-bold bg-gradient-to-t from-black/70 to-transparent rounded-b-[2.3rem]">
-                    TikTok Placeholder<br />{key}
-                  </span>
-                </section>
-              </blockquote>
-              <script async src="https://www.tiktok.com/embed.js"></script>
-            </div>
-          {/each}
+        <div class="flex flex-nowrap space-x-8 rounded-lg">
+          <img class="rounded-lg size-160" src={k} alt="" />
+          <img class="rounded-lg size-160" src={ssone} alt="" />
+          <img class="rounded-lg size-160" src={sstwo} alt="" />
         </div>
       </div>
     </section>
