@@ -30,7 +30,7 @@
           <p
             class="text-white text-base sm:text-lg text-center max-w-full md:max-w-[35%]"
           >
-            {name} is Hungary’s leading content agency, trusted by top brands for our hands-on, done-for-you approach. No extra steps, no hidden costs, just proven, high-performing content delivered exactly when you need it.
+            {name} is Hungary’s leading content agency, trusted by top brands for our hands-on, done-for-you approach. No extra steps, no hidden costs, 222222222222222222222222222222222222222just proven, high-performing content delivered exactly when you need it.
           </p>
           <button
             data-cta="hero-free-preview"
